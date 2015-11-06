@@ -1,0 +1,23 @@
+@mixin button-outline($button-name, $border-color) {
+    &.#{$button-name} {
+        color: $border-color;
+        &:hover,
+        &:focus,
+        &:active {
+            color: darken($border-color, 10%); // Match darkening from button-variant
+        }
+    }
+}
+
+.btn-outline {
+    &, 
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent;
+    }
+
+    @include button-outline(btn-secondary, $btn-default-border);
+    @include button-outline(btn-info, $btn-info-border);
+
+}

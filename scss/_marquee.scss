@@ -1,0 +1,19 @@
+@mixin marquee( $background, $font-color, $link-color, $link-color-hover  ) {
+    background-color: $background;
+    color: $font-color;
+
+    p > a:not( .btn ),
+    .btn-link {
+        color: $link-color;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $link-color-hover;
+        }
+    }
+}
+
+.marquee-dark {
+    @include marquee( $charcoal, #fff, $gray-lighter, #fff );
+}

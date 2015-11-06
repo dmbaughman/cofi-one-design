@@ -1,0 +1,16 @@
+{
+  "name": "cofi-one-design",
+  "version": "1.0.0",
+  "description": "CSS framework to implement One Design styles for Capital One Investing",
+  "keywords": [
+    "CSS",
+    "SCSS",
+    "OneDesign",
+    "Bootstrap"
+  ],
+  "author": "COFI Brand Marketing",
+  "license": "ISC",
+  "dependencies": {
+    "oneui-icons": "git+https://github.kdc.capitalone.com/cofi-brand-marketing/oneui-icons.git"
+  }
+}

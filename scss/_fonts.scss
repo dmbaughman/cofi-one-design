@@ -1,0 +1,70 @@
+@mixin font-face($family) {
+    $webfont-path: "../fonts/" !default; // Should be sibling directory to css/
+    
+    $font-variations: (
+        (
+            name: "ProximaNova-Sbold-webfont",
+            style: normal,
+            weight: 600,
+            id: proxima_nova_ltsemibold
+        ),
+        // (
+        //     name: "ProximaNova-SboldIt-webfont",
+        //     style: italic,
+        //     weight: 600,
+        //     id: proxima_novasemibold_italic
+        // ),
+        (
+            name: "ProximaNova-Reg-webfont",
+            style: normal,
+            weight: 400,
+            id: proxima_nova_rgregular
+        ),
+        (
+            name: "ProximaNova-RegIt-webfont",
+            style: italic,
+            weight: 400,
+            id: proxima_novaregular_italic
+        ),
+        (
+            name: "ProximaNova-Light-webfont",
+            style: normal,
+            weight: 300,
+            id: proxima_nova_ltlight
+        // ),
+        // (
+        //     name: "ProximaNova-LightIt-webfont",
+        //     style: italic,
+        //     weight: 300,
+        //     id: proxima_novalight_italic
+        // ),
+        // (
+        //     name: "ProximaNova-Thin-webfont",
+        //     style: normal,
+        //     weight: 100,
+        //     id: proxima_nova_ltlight
+        )
+    );
+
+    @each $variant in $font-variations {
+        $name: map-get( $variant, name);
+        $weight: map-get( $variant, weight);
+        $style: map-get( $variant, style);
+        $id: map-get( $variant, id);
+
+        @font-face {
+            font-family: $family;
+            src: url( "#{ $webfont-path }#{ $name }.eot" );
+            src: url( "#{ $webfont-path }#{ $name }.eot?#iefix" ) format( "embedded-opentype" ),
+                 url( "#{ $webfont-path }#{ $name }.woff2" ) format( "woff2" ),
+                 url( "#{ $webfont-path }#{ $name }.woff" ) format( "woff" ),
+                 url( "#{ $webfont-path }#{ $name }.ttf" )  format( "truetype" ),
+                 url( "#{ $webfont-path }#{ $name }.svg##{ $id }" ) format( "svg" );
+             font-weight: $weight;
+             font-style: $style;
+         }
+    }
+
+}
+
+@include font-face("Proxima Nova");
