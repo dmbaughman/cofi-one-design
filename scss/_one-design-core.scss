@@ -1,3 +1,6 @@
+// Bootstrap Styles and Overrides
+// ------------------------------
+
 // Core variables and mixins
 @import "variables";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
@@ -9,20 +12,21 @@
 @import "../node_modules/oneui-icons/styles/ui-icons.scss";
 
 // Core CSS
+@import "backgrounds";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "fonts";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "type";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+@import "buttons";
+
 
 // Utility classes
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "utilities";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
-
-// Capital One Investing Styles
-// ----------------------------
-@import "fonts";
-@import "buttons";

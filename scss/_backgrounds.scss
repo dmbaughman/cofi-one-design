@@ -1,0 +1,127 @@
+%bg-dark {
+    color: #fff;
+    
+    a:not(.btn),
+    .btn-link {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+        }
+    }
+}
+
+%bg-light {
+    color: $text-color;
+    
+    a:not(.btn),
+    .btn-link {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            color: $link-color;
+        }
+    }
+}
+
+.bg-charcoal-dark {
+    @extend %bg-dark;
+    background-color: $charcoal-dark;
+
+    hr {
+        border-color: $charcoal;
+    }
+}
+
+.bg-charcoal {
+    @extend %bg-dark;
+    background-color: $charcoal;
+
+    hr {
+        border-color: $charcoal-light;
+    }
+}
+
+.bg-charcoal-light {
+    @extend %bg-dark;
+    background-color: $charcoal-light;
+
+    hr {
+        border-color: $charcoal-lighter;
+    }
+}
+
+.bg-brand-blue-dark {
+    @extend %bg-dark;
+    background-color: $brand-blue-dark;
+
+    hr {
+        border-color: $brand-blue;
+    }
+}
+
+.bg-brand-blue {
+    @extend %bg-dark;
+    background-color: $brand-blue;
+
+    hr {
+        border-color: $brand-blue-light;
+    }
+}
+
+.bg-blue-alt {
+    @extend %bg-dark;
+    background-color: $blue-alt;
+
+    hr {
+        border-color: $blue-alt-light;
+    }
+}
+
+.bg-green {
+    @extend %bg-dark;
+    background-color: $green;
+
+    hr {
+        border-color: $green-light;
+    }
+}
+
+
+.bg-brand-gray-light {
+    @extend %bg-light;
+    background-color: $brand-gray-light;
+
+    hr {
+        border-color: $brand-gray;
+    }
+}
+
+.bg-brand-gray-lighter {
+    @extend %bg-light;
+    background-color: $brand-gray-lighter;
+
+    hr {
+        border-color: $brand-gray;
+    }
+}
+
+.bg-brand-gray-lightest {
+    @extend %bg-light;
+    background-color: $brand-gray-lightest;
+
+    hr {
+        border-color: $brand-gray;
+    }
+}
+
+.bg-white {
+    @extend %bg-light;
+    background-color: #fff;
+
+    hr {
+        border-color: $brand-gray-light;
+    }
+}

@@ -1,0 +1,44 @@
+// Font weights
+// ------------
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+// Font colors 
+// -----------
+
+.blue {
+    color: $brand-blue;
+}
+
+.red {
+    color: $brand-red;
+}
+
+.blue-alt {
+    color: $blue-alt;
+}
+
+.green {
+    color: $green
+}
+
+.yellow {
+    color: $yellow;
+}
+
+// Lists
+// -----
+
+ul {
+    padding-left: $font-size-base;
+}

@@ -1,0 +1,18 @@
+$padding-base: $grid-gutter-width / 2;
+
+.padding {
+
+    &-all {
+        padding: $padding-base;
+    }
+
+    &-vertical {
+        padding-top: $padding-base;
+        padding-bottom: $padding-base;
+    }
+
+    &-horizontal {
+        padding-right: $padding-base;
+        padding-left: $padding-base;
+    }
+}
