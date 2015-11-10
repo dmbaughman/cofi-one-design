@@ -54,6 +54,11 @@
         line-height: 1.2;
     }
 
+    > tbody > tr > td {
+        color: $charcoal-light;
+        font-weight: 300;
+    }
+
     tr:first-child {
         > th,
         > td {
