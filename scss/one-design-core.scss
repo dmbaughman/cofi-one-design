@@ -25,9 +25,19 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 @import "buttons";
 
+// Bootstrap Components
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "navbar";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
+
 
 // Utility classes
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "utilities";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
+
+// Unique styles
+@import "marquee";
+@import "tables";
