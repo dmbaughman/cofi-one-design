@@ -14,7 +14,7 @@
     }
 
     > thead > tr > th {
-        background-color: $gray-lighter;
+        background-color: $brand-gray-light;
         font-size: $font-size-small;
         border-bottom: none;
     }
@@ -47,9 +47,16 @@
 .table-bonus-horizontal {
     @extend %table-common;
 
+    > tbody > tr > th,
+    > tbody > tr > td {
+        vertical-align: middle;
+        text-align: center;
+        line-height: 1.2;
+    }
+
     tr:first-child {
-        th,
-        td {
+        > th,
+        > td {
             font-size: $font-size-h3;
             
             &.highlight-heading {
@@ -66,8 +73,7 @@
 
     tr > th:first-child,
     tr > td:first-child {
-        background-color: $brand-blue-light;
-        color: #fff;
+        background-color: $brand-gray-light;
     }
 }
 
