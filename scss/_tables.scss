@@ -41,7 +41,34 @@
 }
 
 .table-bonus-horizontal {
-    
+    margin-bottom: 0;
+
+    tr:first-child {
+        th,
+        td {
+            font-size: $font-size-h3;
+            
+            &.highlight-heading {
+                background-color: $brand-blue-light;
+                color: #fff;
+            }            
+            
+            &.highlight-cell {
+                color: $green;
+                font-weight: 400;        
+            }
+        }
+    }
+
+
+
+
+
+    tr > th:first-child,
+    tr > td:first-child {
+        background-color: $brand-blue-light;
+        color: #fff;
+    }
 }
 
 .table-comparison-horizontal {
