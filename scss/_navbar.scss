@@ -1,0 +1,17 @@
+.navbar {
+    $logo-height: 44px;
+    $logo-width: 195px;
+    $logo-padding-vertical: ($navbar-height - $logo-height) / 2;
+
+    margin-bottom: 0;
+
+    &-brand {
+        padding-top: $logo-padding-vertical;
+        padding-bottom: $logo-padding-vertical;
+        .brand-image {
+            width: $logo-width;
+            height: $logo-height;
+        }        
+    }
+
+}

@@ -71,12 +71,45 @@
     }
 }
 
+.bg-brand-blue-light {
+    @extend %bg-dark;
+    background-color: $brand-blue-light;
+
+    hr {
+        border-color: $brand-blue;
+    }
+}
+
 .bg-blue-alt {
     @extend %bg-dark;
     background-color: $blue-alt;
 
     hr {
         border-color: $blue-alt-light;
+    }
+}
+
+.bg-blue-alt-light {
+    @extend %bg-dark;
+    background-color: $blue-alt-light;
+    
+    hr {
+        border-color: $blue-alt-lighter;
+    }
+}
+
+.bg-blue-alt-lighter {
+    background-color: $blue-alt-lighter;
+    hr {
+        border-color: $blue-alt-lightest;
+    }
+}
+
+
+.bg-blue-alt-lightest {
+    background-color: $blue-alt-lightest;
+    hr {
+        border-color: $blue-alt-lighter;
     }
 }
 
@@ -90,7 +123,7 @@
 }
 
 
-.bg-brand-gray-light {
+.bg-gray-light {
     @extend %bg-light;
     background-color: $brand-gray-light;
 
@@ -99,7 +132,7 @@
     }
 }
 
-.bg-brand-gray-lighter {
+.bg-gray-lighter {
     @extend %bg-light;
     background-color: $brand-gray-lighter;
 
@@ -108,7 +141,7 @@
     }
 }
 
-.bg-brand-gray-lightest {
+.bg-gray-lightest {
     @extend %bg-light;
     background-color: $brand-gray-lightest;
 
@@ -124,4 +157,13 @@
     hr {
         border-color: $brand-gray-light;
     }
+}
+
+// Image backgrounds
+
+.bg-workspace-dark {
+    background-image: url('https://content.capitaloneinvesting.com/mgdcon/core/COI/images/landing-page/bg-workspace-dark.jpg');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
