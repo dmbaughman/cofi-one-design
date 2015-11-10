@@ -43,6 +43,13 @@
 .table-bonus-horizontal {
     margin-bottom: 0;
 
+    > tbody > tr {
+        > th,
+        > td {
+            width: percentage( 100 / 6 ); // 6 equal columns
+        }
+    }
+
     tr:first-child {
         th,
         td {
@@ -59,10 +66,6 @@
             }
         }
     }
-
-
-
-
 
     tr > th:first-child,
     tr > td:first-child {
