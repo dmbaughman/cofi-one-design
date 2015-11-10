@@ -47,8 +47,13 @@
 .table-bonus-horizontal {
     @extend %table-common;
 
-    > tbody > tr > th,
-    > tbody > tr > td {
+    > thead > tr > th,
+    > tbody > tr > td,
+    > tbody > tr > th {
+        padding: $table-cell-padding * 2;
+        border: 1px solid $brand-gray-lightest;
+        border-top-color: $brand-gray-light;
+        border-bottom: none;
         vertical-align: middle;
         text-align: center;
         line-height: 1.2;
