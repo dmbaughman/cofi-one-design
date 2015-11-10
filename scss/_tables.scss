@@ -72,7 +72,7 @@
 }
 
 .table-comparison-horizontal {
-    @extend %table-common all;
+    @extend %table-common;
 
     > thead > tr > th,
     > tbody > tr > td,
