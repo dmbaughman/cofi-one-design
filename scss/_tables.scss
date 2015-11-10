@@ -4,7 +4,7 @@
 }
 
 .table-bonus-vertical {
-    @extend %table-common all;
+    @extend %table-common;
 
     > thead > tr > th,
     > tbody > tr > td {
@@ -45,7 +45,7 @@
 }
 
 .table-bonus-horizontal {
-    @extend %table-common all;
+    @extend %table-common;
 
     tr:first-child {
         th,
