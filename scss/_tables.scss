@@ -1,12 +1,16 @@
-.table-bonus-vertical {
+%table-common {
     margin-bottom: 0;
+    table-layout: fixed;
+}
+
+.table-bonus-vertical {
+    @extend %table-common all;
 
     > thead > tr > th,
     > tbody > tr > td {
         vertical-align: middle;
         text-align: center;
         line-height: 1.2;
-        width: 50%;
     }
 
     > thead > tr > th {
@@ -41,14 +45,7 @@
 }
 
 .table-bonus-horizontal {
-    margin-bottom: 0;
-
-    > tbody > tr {
-        > th,
-        > td {
-            width: percentage( 100 / 6 ); // 6 equal columns
-        }
-    }
+    @extend %table-common all;
 
     tr:first-child {
         th,
@@ -75,6 +72,7 @@
 }
 
 .table-comparison-horizontal {
+    @extend %table-common all;
 
     > thead > tr > th,
     > tbody > tr > td,
