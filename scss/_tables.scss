@@ -143,6 +143,7 @@
 
     > thead > tr > th,
     > tbody > tr > td {
+        padding: ($table-cell-padding * 2) $table-cell-padding;
         border: 1px solid $brand-gray-lightest;
         border-top-color: $brand-gray-light;
         border-bottom: none;
