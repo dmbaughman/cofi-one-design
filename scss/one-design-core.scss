@@ -12,9 +12,7 @@
 @import "../node_modules/oneui-icons/styles/ui-icons.scss";
 
 // Core CSS
-@import "backgrounds";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
-@import "fonts";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
 @import "type";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code";
@@ -34,10 +32,14 @@
 
 // Utility classes
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
-@import "utilities";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 
 // COFI-specific styles
+// --------------------
+
+@import "fonts";
+@import "backgrounds";
 @import "marquee";
 @import "tables";
+@import "utilities";
