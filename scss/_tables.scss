@@ -154,5 +154,8 @@
         color: #fff;
         background-color: $brand-blue-light;
     }
+}
 
+.table > tbody + tbody {
+    border-top: none;
 }
