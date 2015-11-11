@@ -120,10 +120,8 @@
         background-color: $brand-gray-light;
     }
 
-    tbody > tr.row-large {
-        > td {
-            font-size: $font-size-h3;
-        }
+    .row-large > td {
+        font-size: $font-size-h3;
     }
 
     .highlight {
