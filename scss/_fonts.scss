@@ -1,6 +1,6 @@
 @mixin font-face($family) {
-    $webfont-path: "../fonts/" !default; // Should be sibling directory to css/
-    
+    $webfont-path: "https://content.capitaloneinvesting.com/mgdcon/core/COI/library/fonts/ProximaNova/" !default;
+
     $font-variations: (
         (
             name: "ProximaNova-Sbold-webfont",
