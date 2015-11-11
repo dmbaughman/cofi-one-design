@@ -139,11 +139,10 @@
 }
 
 .table-comparison-vertical {
-    @extend %table-common;
+    margin-bottom: 0;
 
     > thead > tr > th,
     > tbody > tr > td {
-        padding: $table-cell-padding * 2;
         border: 1px solid $brand-gray-lightest;
         border-top-color: $brand-gray-light;
         border-bottom: none;
@@ -153,7 +152,15 @@
     }
 
     > thead > tr > th {
+        font-size: $font-size-small;
+        font-weight: 400;
         background-color: $brand-gray-light;
+    }
+
+    > tbody > tr:first-child > td {
+        font-size: $font-size-h4;
+        color: #fff;
+        background-color: $brand-blue-light;
     }
 
 }
