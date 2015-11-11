@@ -56,6 +56,7 @@
             font-family: $family;
             src: url( "#{ $webfont-path }#{ $name }.eot" );
             src: url( "#{ $webfont-path }#{ $name }.eot?#iefix" ) format( "embedded-opentype" ),
+                 // .woff2 files don't get picked up by MGDCON deployment job
                  // url( "#{ $webfont-path }#{ $name }.woff2" ) format( "woff2" ),
                  url( "#{ $webfont-path }#{ $name }.woff" ) format( "woff" ),
                  url( "#{ $webfont-path }#{ $name }.ttf" )  format( "truetype" ),
