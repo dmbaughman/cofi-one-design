@@ -137,3 +137,23 @@
         font-weight: 400;
     }
 }
+
+.table-comparison-vertical {
+    @extend %table-common;
+
+    > thead > tr > th,
+    > tbody > tr > td {
+        padding: $table-cell-padding * 2;
+        border: 1px solid $brand-gray-lightest;
+        border-top-color: $brand-gray-light;
+        border-bottom: none;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    > thead > tr > th {
+        background-color: $brand-gray-light;
+    }
+
+}
