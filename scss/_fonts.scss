@@ -56,7 +56,7 @@
             font-family: $family;
             src: url( "#{ $webfont-path }#{ $name }.eot" );
             src: url( "#{ $webfont-path }#{ $name }.eot?#iefix" ) format( "embedded-opentype" ),
-                 url( "#{ $webfont-path }#{ $name }.woff2" ) format( "woff2" ),
+                 // url( "#{ $webfont-path }#{ $name }.woff2" ) format( "woff2" ),
                  url( "#{ $webfont-path }#{ $name }.woff" ) format( "woff" ),
                  url( "#{ $webfont-path }#{ $name }.ttf" )  format( "truetype" ),
                  url( "#{ $webfont-path }#{ $name }.svg##{ $id }" ) format( "svg" );
