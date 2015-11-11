@@ -120,14 +120,9 @@
         background-color: $brand-gray-light;
     }
 
-    tbody > tr {
-        &:nth-child(1),
-        &:nth-child(2),
-        &:nth-child(5),
-        &:nth-child(6) {
-            > td {
-                font-size: $font-size-h3;
-            }
+    tbody > tr.row-large {
+        > td {
+            font-size: $font-size-h3;
         }
     }
 
