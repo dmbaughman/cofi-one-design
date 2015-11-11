@@ -139,7 +139,7 @@
 }
 
 .table-comparison-vertical {
-    margin-bottom: 0;
+    @extend %table-common;
 
     > thead > tr > th,
     > tbody > tr > td {
@@ -158,7 +158,6 @@
     }
 
     > tbody > tr:first-child > td {
-        font-size: $font-size-h4;
         color: #fff;
         background-color: $brand-blue-light;
     }
