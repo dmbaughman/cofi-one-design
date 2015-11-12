@@ -1,9 +1,0 @@
-.marquee {
-    @extend .padding-large-vertical;
-
-    .jumbo {
-        @media (min-width: $screen-md-min) {
-            font-size: floor($font-size-base * 4); // ~64px        
-        }
-    }
-}
