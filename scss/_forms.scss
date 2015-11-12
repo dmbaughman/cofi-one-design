@@ -1,0 +1,14 @@
+.form-control {
+    @include transition( border-color $transition-fast );
+
+    border-width: $border-base-width;
+
+    &,
+    &:focus {
+        @include box-shadow( none );
+    }
+}
+
+.help-block {
+    color: $charcoal-light;
+}
