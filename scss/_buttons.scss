@@ -1,3 +1,8 @@
+.btn {
+    border-width: $border-width-base;
+    @include transition( background-color $transition-fast, border-color $transition-fast);
+}
+
 @mixin button-outline($button-name, $border-color) {
     &.#{$button-name} {
         color: $border-color;
