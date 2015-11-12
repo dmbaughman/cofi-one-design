@@ -22,7 +22,7 @@
         background-color: transparent;
     }
 
-    @include button-outline(btn-secondary, $btn-default-border);
+    @include button-outline(btn-default, $btn-default-border);
     @include button-outline(btn-info, $btn-info-border);
 
 }
