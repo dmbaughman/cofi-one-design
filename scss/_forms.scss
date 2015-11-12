@@ -1,7 +1,7 @@
 .form-control {
     @include transition( border-color $transition-fast );
 
-    border-width: $border-base-width;
+    border-width: $border-width-base;
 
     &,
     &:focus {
