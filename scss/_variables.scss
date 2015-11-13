@@ -539,21 +539,25 @@ $jumbotron-heading-font-size:    ceil(($font-size-base * 4.5));
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             $text-color;
-$state-success-bg:               #fff;
-$state-success-border:           $brand-success;
 
-$state-info-text:                $text-color;
-$state-info-bg:                  #fff;
-$state-info-border:              $brand-info;
+// @TODO: Update these to more on-brand shades if the
+// One Design color palette ever gets expanded
 
-$state-warning-text:             $text-color;
-$state-warning-bg:               #fff;
-$state-warning-border:           $brand-warning;
+$state-success-text:             $green-dark;
+$state-success-bg:               lighten($green-lightest, 30%);
+$state-success-border:           $state-success-bg;
 
-$state-danger-text:              $text-color;
-$state-danger-bg:                #fff;
-$state-danger-border:            $brand-danger;
+$state-info-text:                $blue-alt-dark;
+$state-info-bg:                  $blue-alt-lightest;
+$state-info-border:              $state-info-bg;
+
+$state-warning-text:             darken($yellow-dark, 10%);
+$state-warning-bg:               lighten($yellow-light, 25%);
+$state-warning-border:           $state-warning-bg;
+
+$state-danger-text:              $brand-red;
+$state-danger-bg:                lighten($brand-red, 40%);
+$state-danger-border:            $state-danger-bg;
 
 
 //== Tooltips
