@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap-sass": "^3.3.5",
-    "oneui-icons": "git+https://github.kdc.capitalone.com/cofi-brand-marketing/oneui-icons.git#v2.0.3"
+    "oneui-icons": "git+https://github.kdc.capitalone.com/cofi-brand-marketing/oneui-icons.git#v2.0.4"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
