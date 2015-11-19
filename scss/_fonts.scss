@@ -1,5 +1,5 @@
 @mixin font-face($family) {
-    $webfont-path: "https://content.capitaloneinvesting.com/mgdcon/core/COI/library/fonts/ProximaNova/" !default;
+    $webfont-path: "../fonts" !default;
 
     $font-variations: (
         (
